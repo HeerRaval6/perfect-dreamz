@@ -1,0 +1,262 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Perfect Dreamz Contact</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<!--
+Template 2067 Education
+http://www.tooplate.com/view/2067-education
+-->
+<link href="tooplate_style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/JavaScript" src="js/jquery-1.6.3.js"></script> 
+
+<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+
+<script type="text/javascript" src="js/ddsmoothmenu.js">
+
+/***********************************************
+* Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script>
+
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "tooplate_menu", //menu DIV id
+	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu', //class added to menu's outer DIV
+	//customtheme: ["#1c5a80", "#18374a"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+</script>
+
+<link rel="stylesheet" href="css/slimbox2.css" type="text/css" media="screen" /> 
+<script type="text/JavaScript" src="js/slimbox2.js"></script> 
+
+<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+
+</head>
+<script language="javascript">
+//function for emailid
+	function isEmailAddr(emailid)
+	{
+		var result = false;
+		var theStr = new String(emailid);
+		var index = theStr.indexOf("@");
+		if (index > 0)
+		{
+			var pindex = theStr.indexOf(".",index);
+			if ((pindex > index+1) && (theStr.length > pindex+1))
+				result = true;
+		}
+		return result;
+	}
+
+
+	function formValidator(theForm)
+	{
+
+//username
+		if(theForm.f1.value=="")
+		{
+			document.getElementById("c1").innerHTML="Please enter username";
+			theForm.f1.focus();
+			return(false);
+		}	
+//email id
+		if (theForm.f2.value == "")
+		{
+			document.getElementById("c2").innerHTML="Please enter a Id.";
+			theForm.f2.focus();
+			return (false);
+		}
+		if (!isEmailAddr(theForm.f2.value))
+		{
+			document.getElementById("c2").innerHTML="Please enter a complete Id in the form: yourname@yourdomain.com";
+			theForm.f2.focus();
+			return (false);
+		}
+		if (theForm.f2.value.length < 3)
+		{
+			document.getElementById("c2").innerHTML="Please enter at least 3 characters in the \"Id\" field.";
+			theForm.f2.focus();
+			return (false);
+		}	
+//message
+	if (theForm.f4.value == "")
+		{
+			document.getElementById("c4").innerHTML="Please enter your message";
+			theForm.f4.focus();
+			return(false);
+		}
+
+	return(true);
+}
+</script>
+<body>
+
+<div id="tooplate_header">
+    <a href="index.html" class="sitetitle">Education Template</a>  
+    <div id="tooplate_menu" class="ddsmoothmenu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a> </li>
+            <li><a href="about.html">About us</a></li>                
+            <li><a href="contact.html" class="selected">Contact us</a></li>
+	    <li><a href="login.html">login</a></li>
+        </ul>
+        <br style="clear: left" />
+    </div> <!-- end of tooplate_menu -->      
+</div> <!-- END of header -->
+    <div id="tooplate_main">
+    	<div id="tooplate_content" class="left">
+        	<div id="contact_form">
+                <h3><center>Our Contact Form</center></h3>
+		<form action="feedback.php" method=post onSubmit="return formValidator(this);"
+
+		
+		<table align="center"><tr>
+<td> &nbsp &nbsp &nbsp &nbsp &nbsp </td>
+<td>
+	<table align="center" >
+	<tr>
+			<td><label>Name:</label>
+                    <input type="text" id="author" name="f1" class="required input_field" /></td>
+			</tr>
+			<tr>
+			<td id="c1" style="color:red;"></td>
+			</tr>
+			<tr>
+			<td><label for="author">E-mail id:</label>
+                    <input type="text" id="author" name="f2" class="required input_field" /></td>
+			</tr>
+			<tr>
+			<td id="c2" style="color:red;"></td>
+			</tr>
+			<tr>
+			<td><label for="author">subject:</label>
+                    <input type="text" id="author" name="f3" class="required input_field" /></td>
+			</tr>
+			<tr>
+			<td id="c3" style="color:red;"></td>
+			</tr>
+			<tr>
+			<td><label for="author">Message:</label>
+                    <input type="text" id="author" name="f4" class="required input_field" /></td>
+			</tr>
+			<tr>
+			<td id="c4" style="color:red;"></td>
+			</tr>
+			<tr>
+			<td align="center"><a href="#"><button>submit</button></a></td>
+			
+			</tr>
+			
+			
+
+
+	</table>
+
+                </form>
+            </div> 
+            <hr class="m60" />
+            
+        	<h3>Our Location</h3>
+        	<div>
+			<p>18-19-20/B new aasthkung complex, vastrapur, Ahmedabad.</p>
+    		</div>
+             Tel: 010-050-4400<br />
+             Fax: 020-050-6600<br /><br />	
+             Email: perfectdreamz@yahoo.com
+            
+			
+        </div>
+        <div id="tooplate_sidebar" class="right">
+        	<div class="content_wrapper content_mb_60">
+                <h3>Our Events</h3>
+                <ul class="sidebar_link">
+                     <li><a>Wedding</a></li>
+                    <li><a>Raas Garba</a></li>
+                    <li><a>Musical Concerts</a></li>
+                    <li><a>Christmas</a></li>
+                    <li><a>New Year</a></li>
+                    <li><a>Birthday</a></li>
+                    <li><a>Mehendi</a></li>
+                </ul>
+			</div>
+            
+           <div class="content_wrapper content_mb_60">
+                <h3>Recent Comments</h3>
+                <ul class="comment_list">
+                    <li>
+                    	<span>Beautiful Decoration</span>
+                        <span class="comment_meta">
+		                     <a>--Mr.george</a>
+						</span>
+					</li>
+                    <li>
+                    	<span>Co-operative to the customers</span>
+                        <span class="comment_meta">
+		                     <a>--Ms.jobanputra</a>
+						</span>
+					</li>
+                    <li>
+                    	<span>Great job.......!</span>
+                        <span class="comment_meta">
+		                     <a>--Mrs.patel</a>
+						</span>
+					</li>
+                    <li>
+                    	<span>Nice management</span>
+                        <span class="comment_meta">
+		                     <a>--Mr.shah</a>
+						</span>
+					</li>
+                </ul>
+            </div>
+            
+        </div>  		
+        <div class="clear h30"></div>
+        <div style="display:none;" class="nav_up" id="nav_up"></div>
+    </div>    <!-- END of tooplate_main -->
+
+
+<div id="tooplate_footer_wrapper">
+	<div id="tooplate_footer">
+    	<div class="col_4">
+        	<h4>Pages</h4>
+            <ul class="nobullet bottom_list">
+            	<li><a href="index.html">Home</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="about us.html">About us</a></li>
+                <li><a href="contact us.html">Contact us</a></li>
+            </ul>
+        </div>
+        
+        <div class="col_4">
+        	<h4>Our Partners</h4>
+            <ul class="nobullet bottom_list">
+                <li><a href="#">themes Designs</a></li>
+                <li><a href="#">Digital decortion</a></li>
+                <li><a href="#"> RHS studio</a></li>
+                <li><a href="#"> mediatronic</a></li>
+                <li><a href="#"> mahavir catorers</a></li>
+            </ul>
+        </div>
+   
+        <div class="col_4 no_margin_right">
+        </div>
+        <div class="clear"></div>
+	</div> <!-- END of tooplate_footer -->
+</div> <!-- END of tooplate_footer_wrapper -->
+
+
+</body>
+</html>

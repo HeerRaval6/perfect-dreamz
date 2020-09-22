@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Perfect Dreamz</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<!--
+Template 2067 Education
+http://www.tooplate.com/view/2067-education
+-->
+<link href="tooplate_style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/JavaScript" src="js/jquery-1.6.3.js"></script> 
+
+<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+
+<script type="text/javascript" src="js/ddsmoothmenu.js">
+
+/***********************************************
+* Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script>
+
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "tooplate_menu", //menu DIV id
+	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu', //class added to menu's outer DIV
+	//customtheme: ["#1c5a80", "#18374a"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+</script>
+
+<link rel="stylesheet" href="css/slimbox2.css" type="text/css" media="screen" /> 
+<script type="text/JavaScript" src="js/slimbox2.js"></script> 
+
+<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+</head>
+<script language="javascript">
+
+	function formValidator(theForm)
+	{
+
+//username
+		if(theForm.a1.value=="")
+		{
+			document.getElementById("x1").innerHTML="Please enter username";
+			theForm.a1.focus();
+			return(false);
+		}
+//pwd
+		if(theForm.a2.value=="")
+		{
+			document.getElementById("x2").innerHTML="Please enter password";
+			theForm.a2.focus();
+			return(false);
+		}
+
+	return(true);
+}	
+</script>
+<body>
+
+<div id="tooplate_header">
+    <a href="index.html" class="sitetitle">Education Template</a>  
+    <div id="tooplate_menu" class="ddsmoothmenu">
+        <ul>
+            <li><a href="index.html" class="selected">Home</a></li>
+            
+            <li><a href="gallery.html">Gallery</a>
+                
+            </li>
+            <li><a href="about.html">About Us</a></li>                
+            <li><a href="contact.html">Contact Us</a></li>
+                
+            </li>
+        </ul>
+
+        <br style="clear: left" />
+    </div> <!-- end of tooplate_menu -->      
+</div> <!-- END of header -->
+
+<form action="admin.php" method=post onSubmit="return formValidator(this);">
+<table align="center"><tr>
+<td> &nbsp &nbsp &nbsp &nbsp &nbsp </td>
+<td>
+	<table align="center">
+	<tr><h1>Admin Login</h1></tr>
+	<tr>
+			<td><label>Username:</label>
+                    <input type="text" id="author" name="a1" class="required input_field" /></td>
+			</tr>
+			<tr>
+			<td id="x1" style="color:red;"></td>
+			</tr>
+			<tr>
+			<td><label for="author">Password:</label>
+                    <input type="password" id="author" name="a2" class="required input_field" /></td>
+			</tr>
+			<tr>
+			<td id="x2" style="color:red;"></td>
+			</tr>
+
+			<tr>
+			<td align="center"><input type="submit" value="submit"></a></td>
+			<td><input type="reset" value="clear"/></td>
+			</tr>
+	</table>
+</td>
+<td> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp </td>
+<td width="381">
+
+		
+			<img src="images/04.png" width="250" height="150"  alt=""/>
+		
+		<BR>
+		<img src="images/01.png" width="250" height="150"  alt=""/>
+		<br>
+		<img src="images/s6.jpg" width="250" height="150"  alt=""/>
+
+		</td>
+
+
+</table>
+</body>
+</html>

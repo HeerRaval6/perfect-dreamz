@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Perfect Dreamz</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<!--
+Template 2067 Education
+http://www.tooplate.com/view/2067-education
+-->
+<link href="tooplate_style.css" rel="stylesheet" type="text/css" />
+
+<script type="text/JavaScript" src="js/jquery-1.6.3.js"></script> 
+
+<link rel="stylesheet" type="text/css" href="css/ddsmoothmenu.css" />
+
+<script type="text/javascript" src="js/ddsmoothmenu.js">
+
+/***********************************************
+* Smooth Navigational Menu- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+</script>
+
+<script type="text/javascript">
+
+ddsmoothmenu.init({
+	mainmenuid: "tooplate_menu", //menu DIV id
+	orientation: 'h', //Horizontal or vertical menu: Set to "h" or "v"
+	classname: 'ddsmoothmenu', //class added to menu's outer DIV
+	//customtheme: ["#1c5a80", "#18374a"],
+	contentsource: "markup" //"markup" or ["container_id", "path_to_menu_file"]
+})
+
+</script>
+
+<link rel="stylesheet" href="css/slimbox2.css" type="text/css" media="screen" /> 
+<script type="text/JavaScript" src="js/slimbox2.js"></script> 
+
+<link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
+</head>
+<script language="javascript">
+//function for emailid
+	function isEmailAddr(emailid)
+	{
+		var result = false;
+		var theStr = new String(emailid);
+		var index = theStr.indexOf("@");
+		if (index > 0)
+		{
+			var pindex = theStr.indexOf(".",index);
+			if ((pindex > index+1) && (theStr.length > pindex+1))
+				result = true;
+		}
+		return result;
+	}
+
+
+	function formValidator(theForm)
+	{
+
+//firstname
+		if(theForm.r1.value=="")
+		{
+			document.getElementById("u1").innerHTML="Please enter first name";
+			theForm.r1.focus();
+			return(false);
+		}	
+		var x=theForm.r1.value;		
+		var anum=/(^\D+$)|(^\D+\D+$)/;
+		if (!anum.test(x))
+		{
+			document.getElementById("u1").innerHTML="Please input only characters";
+			theForm.r1.focus();
+			return (false);
+		}
+
+//lastname
+		if(theForm.r2.value=="")
+		{
+			document.getElementById("u2").innerHTML="Please enter last name";
+			theForm.r2.focus();
+			return(false);
+		}	
+		var x=theForm.r2.value;		
+		var anum=/(^\D+$)|(^\D+\D+$)/;
+		if (!anum.test(x))
+		{
+			document.getElementById("u2").innerHTML="Please input only characters";
+			theForm.r2.focus();
+			return (false);
+		}
+//username
+		if(theForm.r3.value=="")
+		{
+			document.getElementById("u3").innerHTML="Please enter username";
+			theForm.r3.focus();
+			return(false);
+		}	
+//email id
+		if (theForm.r4.value == "")
+		{
+			document.getElementById("u4").innerHTML="Please enter a Id.";
+			theForm.r4.focus();
+			return (false);
+		}
+		if (!isEmailAddr(theForm.r4.value))
+		{
+			document.getElementById("u4").innerHTML="Please enter a complete Id in the form: yourname@yourdomain.com";
+			theForm.r4.focus();
+			return (false);
+		}
+		if (theForm.r4.value.length < 3)
+		{
+			document.getElementById("u4").innerHTML="Please enter at least 3 characters in the \"Id\" field.";
+			theForm.r4.focus();
+			return (false);
+		}	
+//pwd
+		if(theForm.r5.value=="")
+		{
+			document.getElementById("u5").innerHTML="Please enter password";
+			theForm.r5.focus();
+			return(false);
+		}
+//cnfpwd
+		if(theForm.r5.value!=theForm.r6.value)
+			{
+				document.getElementById("u6").innerHTML="Please enter password as above";
+				theForm.r6.focus();
+				return(false);
+			}
+//mobile no
+		if (theForm.r7.value == "" || theForm.r7.value.length !=10)
+		{
+			document.getElementById("u7").innerHTML="Please enter a 10 digit Mobile No.";
+			theForm.r7.focus();
+			return (false);
+		}
+		var x=theForm.r7.value;
+		var anum=/(^\d+$)|(^\d+\d+$)/;
+		if (!anum.test(x))
+		{
+			document.getElementById("u7").innerHTML="Please input a valid Mobile No.!";
+			theForm.r7.focus();
+			return (false);
+		}	
+//address
+		if(theForm.r8.value=="")
+		{
+			document.getElementById("u8").innerHTML="Please enter address";
+			theForm.r8.focus();
+			return(false);
+		}
+//pincode
+		if (theForm.r11.value == "" || theForm.r11.value.length !=6)
+		{
+			document.getElementById("u9").innerHTML="Please enter a 6 digit pincode.";
+			theForm.r11.focus();
+			return (false);
+		}
+		var x=theForm.r11.value;
+		var anum=/(^\d+$)|(^\d+\d+$)/;
+		if (!anum.test(x))
+		{
+			document.getElementById("u9").innerHTML="Please input a valid pincode.!";
+			theForm.r11.focus();
+			return (false);
+		}
+//ans
+	if (theForm.r13.value == "")
+		{
+			document.getElementById("u10").innerHTML="Please enter your answer";
+			theForm.r13.focus();
+			return(false);
+		}
+
+	return(true);
+}
+</script>
+	
+<body>
+
+<div id="tooplate_header">
+    <a href="index.html" class="sitetitle">Education Template</a>  
+    <div id="tooplate_menu" class="ddsmoothmenu">
+        <ul>
+            <li><a href="index.html" class="selected">Home</a></li>
+            <li><a href="gallery.html">Gallery</a>
+                
+            </li>
+            <li><a href="about.html">About</a></li>                
+            <li><a href="contact.html">Contact</a></li>
+	    <li><a href="login.html">login</a></li>
+        </ul>
+
+        <br style="clear: left" />
+    </div> <!-- end of tooplate_menu -->      
+</div> <!-- END of header -->
+
+<html>
+<center>
+<table>
+<td>
+
+<form action="sign.php" method=post onSubmit="return formValidator(this);">
+<table>
+<td>
+<h2>Registration form</h2>
+			<tr>
+			<td><label for="author">First Name:</label>
+                    <input type="text" id="author" name="r1" class="required input_field" /></td>
+<tr>
+<td id="u1" style="color:red;"></td>
+			</tr>
+			<tr>
+			<td><label for="author">Last Name:</label>
+                    <input type="text" id="author" name="r2" class="required input_field" /></td>
+<tr>
+<td id="u2" style="color:red;"></td>
+			</tr>
+			<tr>
+			<td><label for="author">Username:</label>
+                    <input type="text" id="author" name="r3" class="required input_field" /></td>
+<tr>
+<td id="u3" style="color:red;"></td>
+			</tr>
+
+			<tr>
+			<td><label for="author">Email-id:</label>
+                    <input type="text" id="author" name="r4" class="required input_field" /></td>
+<tr>
+<td id="u4" style="color:red;"></td>
+			</tr>
+			<tr>
+			<td><label for="author">Password:</label>
+                    <input type="password" id="author" name="r5" class="required input_field" /></td>
+<tr>
+<td id="u5" style="color:red;"></td>
+			</tr>
+			<tr>
+			<td><label for="author">Confirm Password:</label>
+                    <input type="password" id="author" name="r6" class="required input_field" /></td>
+<tr>
+<td id="u6" style="color:red;"></td>
+			</tr>
+			<tr>
+			<td><label for="author">Mobile no:</label>
+                    <input type="text" id="author" name="r7" class="required input_field" /></td>
+<tr>
+<td id="u7" style="color:red;"></td>
+			</tr>
+			<tr>
+			<td><label for="author">Address:</label>
+                        <textarea id="text" name="r8" rows="0" cols="0" class="required"></textarea></td>
+<tr>
+<td id="u8" style="color:red;"></td>
+			</tr>
+			<tr>
+			<td><label for="author">City:</label>
+                   	<select name="r9">
+			<option value="ahmedabad">AHMEDABAD</option>
+			<option value="rajkot">RAJKOT</option>
+			<option value="jamnagar">JAMNAGAR</option>
+			<option value="surat">SURAT</option>
+			<option value="vadodra">VADODRA</option>
+			<option value="mumbai">MUMBAI</option>
+			<option value="delhi">DELHI</option>
+			<option value="chennai">CHENNAI</option>
+			<option value="jaipur">JAIPUR</option>
+			<option value="udaipur">UDAIPUR</option>
+			<option value="ludhiana">LUDHIANA</option>
+			<option value="pune">PUNE</option>
+			<option value="amritsar">AMRITSAR</option>
+			<option value="goa">GOA</option>
+			</select>
+			</td>
+			</tr>
+			<tr>
+			<td><label for="author">State:</label>
+			<select name="r10">
+			<option value="gujarat">GUJARAT</option>
+			<option value="maharashtra">MAHARASHTRA</option>
+			<option value="punjab">PUNJAB</option>
+			<option value="goa">GOA</option>
+			<option value="rajasthan">RAJASTHAN</option>
+               		</td>
+			</tr>
+
+			<tr>
+			<td><label for="author">Pincode:</label>
+                    <input type="text" id="author" name="r11" class="required input_field" /></td>
+<tr>
+<td id="u9" style="color:red;"></td>
+			</tr>
+<tr>
+<td><font color="black"><b>Security Question:-</b></font>
+<tr>
+<td><select name=r12>
+	<option value="Your Favourite Teacher">Your Favourite Teacher</option>
+	<option value="Your Favourite Book">Your Favourite Book</option>
+	<option value="Your Favourite Player">Your Favourite Player</option>
+	<option value="Your Favourite Picture">Your Favourite Picture</option>
+	</select></td></tr>
+<tr>
+	<td><font color="black"><b>Your Answer:-</b></font>
+	<tr><td><input type="text" name="r13" >
+	</td></tr><tr>
+<td id="u10" style="color:red;"></td>
+			</tr>
+
+
+
+			<tr>
+			<td><input type="reset"></td>
+			<td colspan="2"><a href="login.html"><input type="submit"value="submit form"/></awamp></td>
+			</tr>
+			
+			<tr>
+			<td>If already have an account than</td>
+			</tr>
+
+			<tr>
+			<td colspan="2"><a href="login.html"><button>login</button></a></td>
+			</tr>
+		</td>
+</table>
+</form>
+</td>
+		
+		<td width="381">
+
+				<nbsp><nbsp>
+			<img src="images/04.png" width="350" height="215"  alt=""/>
+		
+		<nbsp><nbsp>
+		<img src="images/01.png" width="350" height="215"  alt=""/>
+		<nbsp><nbsp>
+		<img src="images/s6.jpg" width="350" height="215"  alt=""/>
+
+		</td>
+
+
+</table>
+</center>
+</html>
